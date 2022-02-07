@@ -1,3 +1,13 @@
-import { HEADER } from "./header.js";
+import { header } from "./header.js";
 
-$("body").append(HEADER)
+
+header()
+
+
+const PROFILE = fetch('../profile.json')
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+let profileArray = []
+profileArray.push(PROFILE)
+console.log(profileArray);
