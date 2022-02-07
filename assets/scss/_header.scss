@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: aqua;
+    
+    &__box{
+        display: flex;
+    justify-items: center;
+    align-items: center;
+   
+    width: 100%;
+        
+        &__ul{
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: red;
+        }
+    }
+}
