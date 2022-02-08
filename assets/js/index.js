@@ -1,17 +1,21 @@
 import { header } from "./header.js";
 
-let item = await fetch('../profile.json')
-let data = await item.json()
-
-
-
 header()
 
 
-const PROFILE = fetch('../profile.json')
-  .then(response => response.json())
-  .then(data => {
-    const NAME = data.name
-  });
+$(".skills").click(function (e) {
+  $(".frame").addClass("frame2");
+  $(".main__header").addClass("header2")
+  $(".text").addClass("text2")
+  
+  e.preventDefault();
+  
+});
 
-
+$(".profile").click(function (e) { 
+  $(".frame").removeClass("frame2");
+  $(".main__header").removeClass("header2");
+  $(".text").removeClass("text2")
+  e.preventDefault();
+  
+});

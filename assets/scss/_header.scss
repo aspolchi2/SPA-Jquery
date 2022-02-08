@@ -1,4 +1,8 @@
 .header{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    margin-top: 1rem;
     &__box{
         &__ul{
             display: flex;
