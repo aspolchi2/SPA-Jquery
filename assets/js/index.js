@@ -1,21 +1,23 @@
 import { header } from "./header.js";
-
+import {removeClass, addClass} from "./functions.js"
 header()
+removeClass()
+addClass()
 
 
-$(".skills").click(function (e) {
-  $(".frame").addClass("frame2");
-  $(".main__header").addClass("header2")
-  $(".text").addClass("text2")
-  
-  e.preventDefault();
-  
-});
 
-$(".profile").click(function (e) { 
-  $(".frame").removeClass("frame2");
-  $(".main__header").removeClass("header2");
-  $(".text").removeClass("text2")
-  e.preventDefault();
-  
+
+//router son mucho muy importante
+const router = [
+    {path: '/', action: 'profile'},
+    {path: '/skills', action: 'skills'},
+    {path: '/portfolio', action: 'portfolio'}
+]
+
+$(window).on('load', function(){
+  router()
+})
+$(window).on('hashchange', function (e) 
+{
+router()
 });
