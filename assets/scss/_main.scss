@@ -51,4 +51,31 @@
         position: relative;
         transition: all 1s ease;
     }
+
+    #app{
+        .title{
+            text-align: center;
+        }
+        
+        .flex{
+            display: flex;
+            width: 80%;
+            margin: auto;
+        .unorderList {
+            list-style: none;
+            line-height: 2rem;
+            font-size: 1.3rem;
+            
+            .itemList{
+                background-color: aqua ;
+                margin: 1rem;
+                text-align: center;
+                border-radius: 10px 0 0 10px;
+                
+                
+            }
+
+        }
+    }
+    }
 }

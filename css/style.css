@@ -58,6 +58,25 @@ a {
   position: relative;
   transition: all 1s ease;
 }
+.main #app .title {
+  text-align: center;
+}
+.main #app .flex {
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.main #app .flex .unorderList {
+  list-style: none;
+  line-height: 2rem;
+  font-size: 1.3rem;
+}
+.main #app .flex .unorderList .itemList {
+  background-color: aqua;
+  margin: 1rem;
+  text-align: center;
+  border-radius: 10px 0 0 10px;
+}
 
 .header {
   position: absolute;
