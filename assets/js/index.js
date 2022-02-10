@@ -2,10 +2,12 @@ import { profile } from "./profile.js";
 import { skills } from "./skills.js";
 import { user, country, aboutMe, foto } from "./user.js"
 const ME = new user("Agustín", "Somoza Polchi")
+
 $(window).on('load', function () {
-    location.hash = '/profile'
+    location.hash = '#/profile'
     
 });
+
 
 
 $(".text").text(`${ME.name}, ${ME.lastName}`);
@@ -27,5 +29,4 @@ $(window).on("hashchange", function () {
     }
     
 });
-
 
