@@ -1,4 +1,5 @@
 .main{
+    //todo esto es fijo
     &__header{
         height: 30vh;
         width: 100%;
@@ -21,7 +22,7 @@
         .frame2{
             left: 15px;
             bottom: 15px;
-            border-radius: 50%;
+            border-radius: 30%;
             border: none;
             transition: all 1s ease;
             background-color: transparent;
@@ -51,8 +52,10 @@
         position: relative;
         transition: all 1s ease;
     }
-
+//aca empieza lo generado por js
     #app{
+        height: 100vh;
+        transition: all 1s ease;
         .title{
             text-align: center;
         }
@@ -61,10 +64,19 @@
             display: flex;
             width: 80%;
             margin: auto;
+            position: relative;
+            .img{
+                height: 75vh;
+                position: absolute;
+                left: 60%;
+                z-index: 0;
+            }
+
         .unorderList {
             list-style: none;
-            line-height: 2rem;
+            line-height: 5rem;
             font-size: 1.3rem;
+            z-index: 1;
             
             .itemList{
                 background-color: aqua ;
@@ -74,8 +86,43 @@
                 
                 
             }
+            
 
         }
     }
+    .skillFlex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+        gap: 10vw;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10vh;
+        
+    .skillBox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &__img{
+            img{
+                height: 25vh;
+            }
+        }
+        &__desc{
+            width: 15%;
+            p{
+                font-size: 1.3rem;
+                font-weight: 700;
+                width: 15%;
+            }
+        }
+        }
     }
 }
+    }
+
+

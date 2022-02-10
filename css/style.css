@@ -9,6 +9,10 @@ a {
   color: black;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .main__header {
   height: 30vh;
   width: 100%;
@@ -31,7 +35,7 @@ a {
 .main__header .imgBox .frame2 {
   left: 15px;
   bottom: 15px;
-  border-radius: 50%;
+  border-radius: 30%;
   border: none;
   transition: all 1s ease;
   background-color: transparent;
@@ -58,6 +62,10 @@ a {
   position: relative;
   transition: all 1s ease;
 }
+.main #app {
+  height: 100vh;
+  transition: all 1s ease;
+}
 .main #app .title {
   text-align: center;
 }
@@ -65,17 +73,54 @@ a {
   display: flex;
   width: 80%;
   margin: auto;
+  position: relative;
+}
+.main #app .flex .img {
+  height: 75vh;
+  position: absolute;
+  left: 60%;
+  z-index: 0;
 }
 .main #app .flex .unorderList {
   list-style: none;
-  line-height: 2rem;
+  line-height: 5rem;
   font-size: 1.3rem;
+  z-index: 1;
 }
 .main #app .flex .unorderList .itemList {
   background-color: aqua;
   margin: 1rem;
   text-align: center;
   border-radius: 10px 0 0 10px;
+}
+.main #app .skillFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  gap: 10vw;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+}
+.main #app .skillFlex .skillBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main #app .skillFlex .skillBox__img img {
+  height: 25vh;
+}
+.main #app .skillFlex .skillBox__desc {
+  width: 15%;
+}
+.main #app .skillFlex .skillBox__desc p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  width: 15%;
 }
 
 .header {
