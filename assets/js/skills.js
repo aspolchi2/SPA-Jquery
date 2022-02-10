@@ -1,3 +1,5 @@
+//creando una "base de datos" para mis skills
+
 const skillsList = [{
     'html':{
         desc:"Good knowledge of HTML sintax",
@@ -25,12 +27,15 @@ const skillsList = [{
         url:'./assets/img/github.svg'
     }
 }];
+
+//for of para separar cada lenguaje 
 function forSkill(){
-for (const iterator of skillsList) {
-    console.log(typeof iterator);
-    for (const i in iterator) {
-        if (iterator.hasOwnProperty.call(iterator, i)) {
-            const element = iterator[i];
+for (const lang of skillsList) {
+//For in para separar el contenido de cada lang
+    for (const i in lang) {
+        if (lang.hasOwnProperty.call(lang, i)) {
+            const element = lang[i];
+//creamos elementos por cada elemento dentro de lang
             $('.skillFlex').append(`<div class ="skillBox ">
             <div class="skillBox__img">
                 <img src= ${element.url}></img>
@@ -47,7 +52,7 @@ for (const iterator of skillsList) {
 }
 
 
-
+//funcion para cambiar el hash a skills
 function skillsHash() {
     $(".skills").click(function (e) {
         location.hash = "/skills"
@@ -60,7 +65,7 @@ skillsHash()
 
 
 
-
+//funcion para agregar elementos o clases a skills
 export function skills() {
     $('#app').remove();
     $('.main').append(`<section id = "app"></section>`);

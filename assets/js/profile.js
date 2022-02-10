@@ -1,9 +1,10 @@
 import { user, country, aboutMe, foto } from "./user.js"
 
+
+//funcion para cambiar el hash a profile
 function profileHash() {
     $('.profile').click(function (e) {
         location.hash = '/profile'
-        console.log(location.hash);
         e.preventDefault();
 
     });
@@ -16,7 +17,7 @@ profileHash()
 const imgProfile = new foto('./assets/img/aboutPage.jpg')
 const countryME = new country("Argentina", "Buenos Aires", "Bahía Blanca")
 
-
+//funcion para agregar elementos y sacar clases 
 export function profile() {
     $('#app').remove();
     $('.main').append(`<section id = "app"></section>`);
@@ -25,19 +26,9 @@ export function profile() {
     $('.flex').append(`<img src = ${imgProfile.src} class="img" </img>`)
     $(".frame").removeClass("frame2");
     $(".main__header").removeClass("header2");
-    $(".text").removeClass("text2")
+    $(".text").removeClass("text2");
 
-    $('.profile').click(function (e) {
-
-
-        e.preventDefault();
-
-    });
-
-
-
-    ;
-
+//funcion para hacer crear elementos de la lista 
     function list() {
         for (const entry of aboutMe) {
             $(".unorderList").append(`<li class ="itemList">${entry}</li>`)

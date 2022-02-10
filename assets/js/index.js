@@ -1,7 +1,7 @@
 import { profile } from "./profile.js";
 import { skills } from "./skills.js";
 import { user, country, aboutMe, foto } from "./user.js"
-const ME = new user("Agustín", "Somoza Polchi")
+const mySelf = new user("Agustín", "Somoza Polchi")
 
 $(window).on('load', function () {
    profile()
@@ -10,7 +10,7 @@ $(window).on('load', function () {
 
 
 
-$(".text").text(`${ME.name}, ${ME.lastName}`);
+$(".text").text(`${mySelf.name}, ${mySelf.lastName}`);
 
 $(window).on("hashchange", function () {
     let locationSlice = location.hash.slice(1)
