@@ -22,7 +22,7 @@ $(window).on("hashchange", function () {
             
             break;
         default:
-            
+            profile()
             break;
     }
     
