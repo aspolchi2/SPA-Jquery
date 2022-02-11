@@ -52,8 +52,10 @@
         position: relative;
         transition: all 1s ease;
     }
+}
 //aca empieza lo generado por js
     #app{
+        display: none;
         height: 100vh;
         transition: all 1s ease;
         .title{
@@ -61,6 +63,7 @@
         }
         
         .flex{
+            display: none;
             display: flex;
             width: 80%;
             margin: auto;
@@ -123,6 +126,6 @@
         }
     }
 }
-    }
+    
 
 

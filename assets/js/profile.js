@@ -27,6 +27,9 @@ export function profile() {
     $(".frame").removeClass("frame2");
     $(".main__header").removeClass("header2");
     $(".text").removeClass("text2");
+    $('#app').fadeIn("slow", function() {
+        // Animation complete
+      });
 
 //funcion para hacer crear elementos de la lista 
     function list() {

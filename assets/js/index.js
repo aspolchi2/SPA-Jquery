@@ -14,7 +14,6 @@ $(".text").text(`${mySelf.name}, ${mySelf.lastName}`);
 
 $(window).on("hashchange", function () {
     let locationSlice = location.hash.slice(1)
-    console.log(locationSlice)
     switch (locationSlice) {
         case '/profile':
             profile()        
