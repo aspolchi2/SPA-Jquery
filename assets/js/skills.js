@@ -52,6 +52,8 @@ for (const lang of skillsList) {
 }
 
 
+
+
 //funcion para cambiar el hash a skills
 function skillsHash() {
     $(".skills").click(function (e) {
