@@ -1,18 +1,57 @@
-.header{
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    margin-top: 1rem;
-    &__box{
-        &__ul{
-            display: flex;
-            gap: 1rem;
-            justify-content: flex-end;
-            list-style: none;
-            margin-right:1rem ;
-            &--li{
-            font-size: .85rem;
-            }
-        }
+.header {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  margin-top: 1rem;
+  &__box {
+    &__ul {
+      display: flex;
+      gap: 1rem;
+      justify-content: flex-end;
+      list-style: none;
+      margin-right: 1rem;
+      .header__box__ul__li {
+        
+      }
     }
+  }
+  .button {
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+    padding: .5rem;
+  }
+
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.652);
+    z-index: -1;
+    transition: all 0.5s;
+  }
+
+  .button:hover::before {
+    width: 100%;
+  }
+
+  .button:hover {
+    color: black;
+  }
+
+  .button:active:before {
+    background: #b9b9b9;
+  }
 }
