@@ -91,6 +91,7 @@
 
         }
     }
+    
     .skillFlex{
         display: flex;
         flex-direction: row;
@@ -121,6 +122,43 @@
                 width: 15%;
             }
         }
+        }
+    }
+}
+.portfolio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 95%;
+    margin: auto;
+    padding-top: 7rem;
+    position: relative;
+    &_image{
+        position: absolute;
+        width: 60%;
+        z-index: 0;
+        transition: 1s all ease;
+        img{
+            width: 100%;
+            transition: 1s all ease;
+
+        }
+    }
+    &_texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 3rem;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+         
+
+        a{
+            font-size: 62px;
+            letter-spacing: 1.5rem;
         }
     }
 }

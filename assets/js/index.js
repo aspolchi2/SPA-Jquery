@@ -1,7 +1,9 @@
 import { profile } from "./profile.js";
 import { skills } from "./skills.js";
 import { user, country, aboutMe, foto } from "./user.js"
+import { portfolio } from "./portfolio.js";
 const mySelf = new user("Agustín", "Somoza Polchi")
+
 
 
 
@@ -13,6 +15,9 @@ const router = () => {
             break;
         case '/skills':
             skills()
+            break;
+        case '/portfolio':
+            portfolio()
             break;
         default:
             profile()
@@ -27,10 +32,11 @@ $(window).on('load', function () {
     router()
 })
 $(window).on("hashchange", function () {
-    
+
     router()
 
 });
+
 
 
 

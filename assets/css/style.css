@@ -10,7 +10,7 @@ a {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 
 .main__header {
@@ -121,6 +121,40 @@ body {
   font-size: 1.3rem;
   font-weight: 700;
   width: 15%;
+}
+.main .portfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 95%;
+  margin: auto;
+  padding-top: 7rem;
+  position: relative;
+}
+.main .portfolio_image {
+  position: absolute;
+  width: 60%;
+  z-index: 0;
+  transition: 1s all ease;
+}
+.main .portfolio_image img {
+  width: 100%;
+  transition: 1s all ease;
+}
+.main .portfolio_texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 3rem;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+}
+.main .portfolio_texto a {
+  font-size: 62px;
+  letter-spacing: 1.5rem;
 }
 
 .header {

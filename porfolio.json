@@ -1,0 +1,17 @@
+[
+    {
+      "Müssbags":{
+        "name":"Müssbags",
+        "url":"https://aspolchi2.github.io/mussbags/",
+        "class":"mussbags",
+        "img":"./assets/img/mussbags.jpg"
+        
+      },
+      "Los Tilos":{
+        "name":"Los Tilos",
+        "url":"https://lostilosmh.com.ar/",
+        "class": "losTilos",
+        "img":"./assets/img/lostilosmh.jpg"
+      }
+    }
+  ]
