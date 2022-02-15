@@ -1,7 +1,7 @@
-import { profile } from "./profile.js";
-import { skills } from "./skills.js";
+import { profile, profileAnimation } from "./profile.js";
+import { skills, skillsAnimate } from "./skills.js";
 import { user, country, aboutMe, foto } from "./user.js"
-import { portfolio } from "./portfolio.js";
+import { portfolio, animateProfile } from "./portfolio.js";
 const mySelf = new user("Agustín", "Somoza Polchi")
 
 
@@ -12,24 +12,31 @@ const router = () => {
     switch (path) {
         case '/profile':
             profile()
+            writeName()
+            profileAnimation()
             break;
         case '/skills':
             skills()
+            writeName()
+            skillsAnimate()
             break;
         case '/portfolio':
             portfolio()
+            animateProfile()
             break;
         default:
             profile()
             break;
     }
 }
-
+function writeName (){
 $(".text").text(`${mySelf.name}, ${mySelf.lastName}`);
+}
 
 
 $(window).on('load', function () {
     router()
+    writeName()
 })
 $(window).on("hashchange", function () {
 

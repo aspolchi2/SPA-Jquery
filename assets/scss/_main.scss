@@ -19,14 +19,7 @@
             transition: all 1s ease;
             background-color: rgb(0, 169, 160);
         }
-        .frame2{
-            left: 15px;
-            bottom: 15px;
-            border-radius: 30%;
-            border: none;
-            transition: all 1s ease;
-            background-color: transparent;
-        }
+        
         .text{
             position: absolute;
             bottom: 0;
@@ -36,11 +29,11 @@
             transition: all 1s ease;
 
         }
-        .text2{
-            font-size: 2rem;
-            bottom: 60px;
-            transition: all 1s ease;
-        }
+        // .text2{
+        //     font-size: 2rem;
+        //     bottom: 60px;
+        //     transition: all 1s ease;
+        // }
     }
     }
     .header2{

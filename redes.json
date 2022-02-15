@@ -1,0 +1,12 @@
+[
+    {
+      "github":{
+        "img":"./assets/img/github.png",
+        "url":"https://github.com/aspolchi2"
+      },
+      "LinkedIn":{
+        "img":"./assets/img/linkedin.png",
+        "url":"https://www.linkedin.com/in/agustin-somoza-polchi/"
+      }
+    }
+  ]

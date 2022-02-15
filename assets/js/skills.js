@@ -69,12 +69,28 @@ skillsHash()
 
 //funcion para agregar elementos o clases a skills
 export function skills() {
-    $('#app').remove();
-    $('.main').append(`<section id = "app"></section>`);
+    $('#app').empty();
     $(".frame").addClass("frame2");
     $(".main__header").addClass("header2")
     $(".text").addClass("text2")
     $('#app').append(`<div class="skillFlex"></div>`)
     forSkill()
     $('#app').fadeIn();
+}
+export function skillsAnimate(){
+    $('.frame').css({
+        position: "absolute",
+        left: "15px",
+        bottom: "15px",
+        borderRadius: "30%",
+        border: "none",
+        transition: "all 1s ease",
+        backgroundColor: "transparent",
+    });
+    $('.text').css({
+        fontSize: "2rem",
+        bottom: "60px",
+        transition: "all 1s ease",
+    })
+
 }

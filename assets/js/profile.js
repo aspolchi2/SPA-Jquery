@@ -44,3 +44,14 @@ export function profile() {
     list()
 
 }
+export function profileAnimation (){
+    $('.frame').css( { position: "absolute",
+        bottom: "-30px",
+        left: "30px",
+        height: "20vh",
+        border: "1px solid rgba(89, 89, 89, 0.563)",
+        borderRadius: "10px",
+        transition: "all 1s ease",
+        backgroundColor: "rgb(0, 169, 160)"
+});
+}
