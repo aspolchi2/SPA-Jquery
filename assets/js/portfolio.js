@@ -18,7 +18,7 @@ export function portfolio() {
 
     $.ajax({
         type: "GET",
-        url: "/porfolio.json",
+        url: "./porfolio.json",
         success: function (response) {
             //for of para iterar "response"
             for (const job of response) {
@@ -45,7 +45,7 @@ export function portfolio() {
 
     $.ajax({
         type: "GET",
-        url: "/redes.json",
+        url: "./redes.json",
         success: function (response) {
             
             $('.text').empty();
