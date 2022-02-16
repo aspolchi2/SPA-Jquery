@@ -19,19 +19,15 @@ const countryME = new country("Argentina", "Buenos Aires", "Bahía Blanca")
 
 //funcion para agregar elementos y sacar clases 
 export function profile() {
-    $('#app').remove();
-    $('.main').append(`<section id = "app"></section>`);
+    $('#app').empty();
     $('#app').append(`<h1 class = "title">ABOUT ME</h1>`);
     $('#app').append(`<div class ="flex"> <ul class = "unorderList"></ul></div>`);
     $('.flex').append(`<img src = ${imgProfile.src} class="img" </img>`)
-    $(".frame").removeClass("frame2");
     $(".main__header").removeClass("header2");
-    $(".text").removeClass("text2");
-    $('#app').fadeIn("slow", function() {
-        
-      });
 
-//funcion para hacer crear elementos de la lista 
+    
+
+    //funcion para hacer crear elementos de la lista 
     function list() {
         for (const entry of aboutMe) {
             $(".unorderList").append(`<li class ="itemList">${entry}</li>`)
@@ -44,8 +40,9 @@ export function profile() {
     list()
 
 }
-export function profileAnimation (){
-    $('.frame').css( { position: "absolute",
+export function profileAnimate() {
+    $('.frame').css({
+        position: "absolute",
         bottom: "-30px",
         left: "30px",
         height: "20vh",
@@ -53,5 +50,15 @@ export function profileAnimation (){
         borderRadius: "10px",
         transition: "all 1s ease",
         backgroundColor: "rgb(0, 169, 160)"
-});
+    });
+    $('.text').css({
+        position: "absolute",
+        bottom: "0px",
+        left: "15vw",
+        fontWeight: "normal",
+        fontSize: "2.5rem",
+        transition: "all 1s ease",
+
+    })
+
 }

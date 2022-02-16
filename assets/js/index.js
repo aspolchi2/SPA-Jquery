@@ -1,7 +1,7 @@
-import { profile, profileAnimation } from "./profile.js";
+import { profile, profileAnimate } from "./profile.js";
 import { skills, skillsAnimate } from "./skills.js";
 import { user, country, aboutMe, foto } from "./user.js"
-import { portfolio, animateProfile } from "./portfolio.js";
+import { portfolio, portfolioAnimate } from "./portfolio.js";
 const mySelf = new user("Agustín", "Somoza Polchi")
 
 
@@ -13,7 +13,7 @@ const router = () => {
         case '/profile':
             profile()
             writeName()
-            profileAnimation()
+            profileAnimate()
             break;
         case '/skills':
             skills()
@@ -22,7 +22,7 @@ const router = () => {
             break;
         case '/portfolio':
             portfolio()
-            animateProfile()
+            portfolioAnimate()
             break;
         default:
             profile()

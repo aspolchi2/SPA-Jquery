@@ -64,7 +64,7 @@ export function portfolio() {
     }
     )
 }
-export function animateProfile(){
+export function portfolioAnimate(){
     $('.frame').css({
         position: "absolute",
         left: "15px",
