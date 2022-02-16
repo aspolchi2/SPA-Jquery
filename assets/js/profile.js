@@ -45,11 +45,13 @@ export function profileAnimate() {
         position: "absolute",
         bottom: "-30px",
         left: "30px",
-        height: "20vh",
+        height: "120px",
+        width: "120px",
         border: "1px solid rgba(89, 89, 89, 0.563)",
         borderRadius: "10px",
-        transition: "all 1s ease",
-        backgroundColor: "rgb(0, 169, 160)"
+        transition: "all 1s linear ",
+        backgroundColor: "rgb(0, 169, 160)",
+        opacity: "1",
     });
     $('.text').css({
         position: "absolute",
@@ -57,8 +59,17 @@ export function profileAnimate() {
         left: "15vw",
         fontWeight: "normal",
         fontSize: "2.5rem",
-        transition: "all 1s ease",
+        transition: "all 1s linear ",
 
+    })
+    $('.main__header').css({
+        height: "35vh",
+        width: "100%",
+        backgroundImage: "url(./assets/img/world.svg)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        position: "relative",
+        transition: "all 1s linear",
     })
 
 }

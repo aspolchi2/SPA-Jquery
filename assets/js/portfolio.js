@@ -45,7 +45,7 @@ export function portfolio() {
 
     $.ajax({
         type: "GET",
-        url: ".assets/json/redes.json",
+        url: "./assets/json/redes.json",
         success: function (response) {
             
             $('.text').empty();
@@ -54,6 +54,7 @@ export function portfolio() {
                     if (Object.hasOwnProperty.call(red, key)) {
                         const element = red[key];
                         $('.text').append(`<a href = ${element.url} target="_blank"><img src= ${element.img}></img></a>`);
+                        console.log('wipu');
 
 
                     }
@@ -67,21 +68,34 @@ export function portfolio() {
 export function portfolioAnimate(){
     $('.frame').css({
         position: "absolute",
-        left: "15px",
-        bottom: "15px",
-        borderRadius: "30%",
+        right: "10px",
+        top: "10px",
+        borderRadius: "50%",
+        width: "50px",
+        height:"50px",
         border: "none",
-        transition: "all 1s ease",
+        transition: "all 1s linear",
         backgroundColor: "transparent",
+        opacity: "0",
     })
     $('.text').css({
+        color:"#FFF",
         position: "absolute",
-        bottom: "0px",
-        left: "15vw",
+        top: "2.5vh",
+        right: "0",
         fontWeight: "normal",
         fontSize: "2.5rem",
-        transition: "all 1s ease",
+        transition: "all 1s linear",
 
     })
-    
+    $('.main__header').css({
+        height: "12vh",
+        width: "100%",
+        backgroundImage: "url(./assets/img/polygon.svg)",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        position: "relative",
+        transition: "all 1s linear",
+    })
+
 }
