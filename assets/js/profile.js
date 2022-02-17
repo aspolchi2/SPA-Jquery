@@ -23,7 +23,6 @@ export function profile() {
     $('#app').append(`<h1 class = "title">ABOUT ME</h1>`);
     $('#app').append(`<div class ="flex"> <ul class = "unorderList"></ul></div>`);
     $('.flex').append(`<img src = ${imgProfile.src} class="img" </img>`)
-    $(".main__header").removeClass("header2");
 
     
 
@@ -49,7 +48,7 @@ export function profileAnimate() {
         width: "150px",
         border: "1px solid rgba(89, 89, 89, 0.563)",
         borderRadius: "10px",
-        transition: "all 1s linear ",
+        transition: "all 500ms linear ",
         backgroundColor: "rgb(0, 169, 160)",
         opacity: "1",
     });
@@ -59,7 +58,7 @@ export function profileAnimate() {
         left: "15vw",
         fontWeight: "normal",
         fontSize: "2.5rem",
-        transition: "all 1s linear ",
+        transition: "all 500ms linear ",
 
     })
     $('.main__header').css({
@@ -69,7 +68,7 @@ export function profileAnimate() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         position: "relative",
-        transition: "all 1s linear",
+        transition: "all 500ms linear",
     })
 
 }

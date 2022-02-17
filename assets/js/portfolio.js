@@ -74,7 +74,7 @@ export function portfolioAnimate(){
         width: "50px",
         height:"50px",
         border: "none",
-        transition: "all 1s linear",
+        transition: "all 500ms linear",
         backgroundColor: "transparent",
         opacity: "0",
     })
@@ -85,7 +85,7 @@ export function portfolioAnimate(){
         right: "0",
         fontWeight: "normal",
         fontSize: "2.5rem",
-        transition: "all 1s linear",
+        transition: "all 500ms linear",
 
     })
     $('.main__header').css({
@@ -95,7 +95,7 @@ export function portfolioAnimate(){
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         position: "relative",
-        transition: "all 1s linear",
+        transition: "all 500ms linear",
     })
 
 }

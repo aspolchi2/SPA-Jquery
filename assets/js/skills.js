@@ -72,7 +72,6 @@ export function skills() {
     $('#app').empty();
     $('#app').append(`<div class="skillFlex"></div>`)
     forSkill()
-    $('#app').fadeIn();
 }
 export function skillsAnimate(){
     $('.frame').css({
@@ -83,14 +82,14 @@ export function skillsAnimate(){
         width: "120px",
         borderRadius: "45%",
         border: "none",
-        transition: "all 1s linear",
+        transition: "all 500ms linear",
         backgroundColor: "transparent",
         opacity: "1"
     });
     $('.text').css({
         fontSize: "2rem",
         bottom: "60px",
-        transition: "all 1s linear",
+        transition: "all 500ms linear",
     })
     $('.main__header').css({
         height: "30vh",
@@ -99,7 +98,7 @@ export function skillsAnimate(){
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         position: "relative",
-        transition: "all 1s linear",
+        transition: "all 500ms linear",
     })
 
 }
