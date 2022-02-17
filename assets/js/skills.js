@@ -10,7 +10,7 @@ const skillsList = [{
         url:"./assets/img/css.svg"
     },
     'sass':{
-        desc:'best preprocesor ever!',
+        desc:'best preprocessor ever!',
         url:'./assets/img/sass.svg'
     },
     'js':{
@@ -36,8 +36,8 @@ for (const lang of skillsList) {
         if (lang.hasOwnProperty.call(lang, i)) {
             const element = lang[i];
 //creamos elementos por cada elemento dentro de lang
-            $('.skillFlex').append(`<div class ="skillBox ">
-            <div class="skillBox__img">
+            $('.skillGrid').append(`<div class ="skillBox ${i}">
+            <div class="skillBox__img ">
                 <img src= ${element.url}></img>
             </div>
             <div class="skillBox__desc">
@@ -70,7 +70,7 @@ skillsHash()
 //funcion para agregar elementos o clases a skills
 export function skills() {
     $('#app').empty();
-    $('#app').append(`<div class="skillFlex"></div>`)
+    $('#app').append(`<div class="skillGrid"></div>`)
     forSkill()
 }
 export function skillsAnimate(){

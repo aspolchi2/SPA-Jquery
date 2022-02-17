@@ -75,16 +75,14 @@
         }
     }
     
-    .skillFlex{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 80%;
+    .skillGrid{
+        width: 85%;
         margin: auto;
-        gap: 10vw;
-        justify-content: center;
-        align-items: center;
-        padding-top: 10vh;
+        display: grid;
+        gap: 7rem;
+        padding-top: 7rem;
+        grid-template-areas: "html css scss"
+                             "js git github";
         
     .skillBox{
         display: flex;
@@ -99,6 +97,7 @@
         }
         &__desc{
             width: 15%;
+            padding-left: 10px;
             p{
                 font-size: 1.3rem;
                 font-weight: 700;

@@ -118,31 +118,29 @@ body {
   text-align: center;
   border-radius: 10px 0 0 10px;
 }
-.main #app .skillFlex {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 80%;
+.main #app .skillGrid {
+  width: 85%;
   margin: auto;
-  gap: 10vw;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10vh;
+  display: grid;
+  gap: 7rem;
+  padding-top: 7rem;
+  grid-template-areas: "html css scss" "js git github";
 }
-.main #app .skillFlex .skillBox {
+.main #app .skillGrid .skillBox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.main #app .skillFlex .skillBox__img img {
+.main #app .skillGrid .skillBox__img img {
   height: 25vh;
 }
-.main #app .skillFlex .skillBox__desc {
+.main #app .skillGrid .skillBox__desc {
   width: 15%;
+  padding-left: 10px;
 }
-.main #app .skillFlex .skillBox__desc p {
+.main #app .skillGrid .skillBox__desc p {
   font-size: 1.3rem;
   font-weight: 700;
   width: 15%;
