@@ -22,9 +22,9 @@ export function profile() {
     $('#app').empty();
     $('#app').append(`<h1 class = "title">ABOUT ME</h1>`);
     $('#app').append(`<div class ="flex"> <ul class = "unorderList"></ul></div>`);
-    $('.flex').append(`<img src = ${imgProfile.src} class="img" </img>`)
+    $('.flex').append(`<img src = ${imgProfile.src} id ="test" class="img" </img>`)
 
-    
+
 
     //funcion para hacer crear elementos de la lista 
     function list() {
@@ -37,7 +37,27 @@ export function profile() {
 
 
     list()
+    const one = document.querySelector(".unorderList")
+    const img = document.querySelector(".img")
 
+
+    function imageLoad(entradas, observador) {
+
+        entradas.forEach((entrada) => {
+            if(entrada.isIntersecting){
+               entrada.target.classList.add("visible")
+            }
+            
+        });
+    }
+    const observer = new IntersectionObserver(imageLoad, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.8,
+
+    });
+    observer.observe(one)
+    observer.observe(img)
 }
 export function profileAnimate() {
     $('.frame').css({

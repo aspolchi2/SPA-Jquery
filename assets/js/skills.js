@@ -72,6 +72,25 @@ export function skills() {
     $('#app').empty();
     $('#app').append(`<div class="skillGrid"></div>`)
     forSkill()
+
+const skillGrid = document.querySelector('.skillGrid')
+
+    function skillLoad(entradas, observador) {
+
+        entradas.forEach((entrada) => {
+            if(entrada.isIntersecting){
+               entrada.target.classList.add("visible")
+            }
+            
+        });
+    }
+    const observer = new IntersectionObserver(skillLoad, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.8,
+
+    });
+    observer.observe(skillGrid)
 }
 export function skillsAnimate(){
     $('.frame').css({
